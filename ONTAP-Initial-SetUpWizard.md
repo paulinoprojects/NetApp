@@ -13,6 +13,7 @@
   - Physically console into Node 2
     - Join Cluster, enter IP address of the private cluster network (169.254.x.x address of node 1)
       - Command to view node IPs: <b><i>cluster1::> network interface show</i></b>
+![e0M](https://user-images.githubusercontent.com/111991325/204438550-468c5330-4fa7-4e2f-bedf-58136798e39f.png)
 
 ### GUI Lab Walkthrough (Guided Cluster Setup)
   - Create a cluster, add nodes, and admin credntials
