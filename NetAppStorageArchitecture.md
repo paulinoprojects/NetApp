@@ -47,4 +47,15 @@
 ## Node SVM
   - Node Management use for management access and create during system setup.
   - Node SVM owns the Node Management LIF for the node, can be used to manage the entire cluster.
-  - 
+
+# Bootup Process 
+## The Boot Device Image
+- Primary Image, the primary bootup process. 
+- Secondary Image, serves as a backup image to rollback to in the bootloader menu.
+
+## Boot Order
+1. Firmware Loader, you can break into the firmware CLI at this point.
+2. Data ONTAP System Image from CompactFlash, you can break into DataONTAP Boot Menu at this point.
+3. System configuration from Vol0 in Aggr0
+4. Boot Complete
+- Summary: Firmware -> OS (ONTAP) -> Configurations -> Complete
